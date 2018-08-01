@@ -85,7 +85,7 @@ function guessLetter(){
 	else if (lettersAlreadyGuessedListArray.indexOf(guess.letter.toUpperCase()) === -1) {
 		lettersAlreadyGuessedList = lettersAlreadyGuessedList.concat(" " + guess.letter.toUpperCase());
 		lettersAlreadyGuessedListArray.push(guess.letter.toUpperCase());
-		console.log('Letters already guessed: ' + lettersAlreadyGuessedList, {padding: 1});
+		console.log('Letters already guessed: ' + lettersAlreadyGuessedList);
 
 		for (i=0; i < someWord.letters.length; i++) {
 			if (guess.letter.toUpperCase() === someWord.letters[i].character && someWord.letters[i].letterGuessedCorrectly === false) {
